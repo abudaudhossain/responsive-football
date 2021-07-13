@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+/* ======== common style  ========= */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* ========== start header style  ========== */
+
+/*======== manu style ========== */
+header{
+    background: #2D25A0;
+    height: 100vh;
+    transition: background 1s;
+}
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+}
+nav .button{
+    background: #E02C6D;
+    padding: 10px 24px;
+
+}
+nav .button .icon{
+    padding-right: 10px;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+nav ul li a,
+a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    color: #fff;
+}
+/* ======= banner style ========== */
+.top-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+}
+.text-area{
+    position:relative;
+    top: 20%;
+    color: #fff;
+    
+}
+.text-area h1{
+    font-size: 64px;
+    font-weight: 700;
+    transition: color 0.5s;
+    }
+
+.text-area a.button{
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    transition: background-color 1s;
+
+}
+.text-area a.button span{
+    padding-left: 8px;
+}
+header:hover{
+    background: #3426eb;
+}
+header:hover h1,
+a{
+color: #f1e9e9;
+}
+.text-area a.button:hover{
+    background:#d85384;
+}
+/* ========== end header style  ========== */
+
