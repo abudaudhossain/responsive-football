@@ -7,9 +7,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.container{
-    width: 90%;
-    margin: 0 auto;
+header,
+.players-details{
+    padding:0 140px 80px 156px;
 }
 img{
     width: 100%;
@@ -20,7 +20,8 @@ img{
 /*======== manu style ========== */
 header{
     background: #2D25A0;
-    height: 100vh;
+    /* height: 100vh; */
+    
     transition: background 1s;
 }
 nav{
@@ -90,4 +91,32 @@ color: #f1e9e9;
     background:#d85384;
 }
 /* ========== end header style  ========== */
+/*========== start  player details  style ========= */
+.players-details{
+ margin-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 27px 30px;
+}
+.player{
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.player-info h2{
+    font-family: Poppins;
 
+font-weight: 700;
+font-size: 28px;
+line-height: 40px;
+color: #18191F;
+
+}
+.player-info p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+/*========== end  player details  style ========= */
