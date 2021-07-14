@@ -7,6 +7,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
+
 header,
 .players-details,
 #latest-leagus,
@@ -76,6 +80,7 @@ a{
     position:relative;
     top: 20%;
     color: #fff;
+    transition: top 1s;
     
 }
 .text-area h1{
@@ -88,9 +93,8 @@ a{
 header:hover{
     background: #3426eb;
 }
-header:hover h1,
-a{
-color: #f1e9e9;
+header:hover .text-area{
+top: 15%;
 }
 .text-area a.button:hover{
     background:#d85384;
@@ -186,9 +190,9 @@ h1{
 }
 
 .contact-form-area input{
-    width: 60%;
-    height: 33px;
-    padding: 5px;
+    width: 55%;
+    height: 30px;
+    padding: 4px;
     font-size: 1em;
     font-weight: 500;
     border: none;
@@ -200,6 +204,7 @@ h1{
     color: #fff;
     border: none;
     margin-left: -5px;
+    padding: 10px 10px;
 }
 .contact-form-area p{
     font-size: 0.8em;
@@ -239,7 +244,118 @@ footer p{
 
 /* ======== end footer style ============ */
 /* ========== start media query  ============= */
-/* ========== end media query  ============= */
-@media  {
-    
+
+@media screen and (max-width: 480px) {
+
+    /* common style  */
+    header, .players-details, #latest-leagus, .highlight {
+        padding: 50px 15px;
+    }
+
+
+
+    /* style header  */
+    header {
+        overflow-x: hidden;
+    }
+    nav{
+        display: none;
+    }
+    .top-banner{
+        grid-template-columns: 1fr;
+       
+    }
+    .top-banner .text-area{
+        top: 0;
+        margin-bottom: 50px;
+    }
+
+
+    /* player style  */
+
+    .players-details .players{
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    /* heighlight style  */
+    .highlight{
+        grid-template-columns: 1fr;
+        /* display: none; */
+    }
+ /* latect league style  */
+    .latest-leagus{
+        grid-template-columns: 1fr;
+    }
+
+    .contact{
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+    .contact input{
+        margin-bottom: 5px;
+        width: 90%;
+    }
+    .contact button{
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+   
 }
+
+/* ========== end media query  ============= */
+
+@media only screen and (max-width: 800px) and (min-width: 500px)  {
+    header, .players-details, #latest-leagus, .highlight {
+        padding: 50px 15px;
+    }
+
+
+
+    /* style header  */
+    header {
+        overflow-x: hidden;
+    }
+    nav{
+        display: none;
+    }
+    .top-banner{
+        grid-template-columns: 1fr;
+       
+    }
+    .top-banner .text-area{
+        top: 0;
+        margin-bottom: 50px;
+    }
+
+
+    /* player style  */
+
+    .players-details .players{
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+    /* heighlight style  */
+    .highlight{
+        grid-template-columns: 1fr;
+        /* display: none; */
+    }
+ /* latect league style  */
+    .latest-leagus{
+        grid-template-columns: 1fr;
+    }
+
+    .contact{
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+    /* .contact input{
+        margin-bottom: 5px;
+        width: 90%;
+    }
+    .contact button{
+        margin-left: 0;
+        margin-bottom: 15px;
+    } */
+   
+    
+    }
