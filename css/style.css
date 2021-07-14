@@ -234,16 +234,61 @@ footer ul li{
     width: 40px;
     text-align:center;
 }
-footer ul li a span{
-  
- 
-}
+
 footer p{
     font-size: 0.7em;
 }
 
 /* ======== end footer style ============ */
 /* ========== start media query  ============= */
+
+@media only screen and (max-width: 800px) and (min-width: 500px)  {
+    header, .players-details, #latest-leagus, .highlight {
+        padding: 50px 15px;
+    }
+
+
+
+    /* style header  */
+    header {
+        overflow-x: hidden;
+    }
+    nav{
+        display: none;
+    }
+    .top-banner{
+        grid-template-columns: 1fr;
+       
+    }
+    .top-banner .text-area{
+        top: 0;
+        margin-bottom: 50px;
+    }
+
+
+    /* player style  */
+
+    .players-details .players{
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+    /* heighlight style  */
+    .highlight{
+        grid-template-columns: 1fr;
+    
+    }
+ /* latect league style  */
+    .latest-leagus{
+        grid-template-columns: 1fr;
+    }
+
+    .contact{
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+ 
+    
+    }
 
 @media screen and (max-width: 480px) {
 
@@ -280,7 +325,6 @@ footer p{
     /* heighlight style  */
     .highlight{
         grid-template-columns: 1fr;
-        /* display: none; */
     }
  /* latect league style  */
     .latest-leagus{
@@ -304,58 +348,3 @@ footer p{
 
 /* ========== end media query  ============= */
 
-@media only screen and (max-width: 800px) and (min-width: 500px)  {
-    header, .players-details, #latest-leagus, .highlight {
-        padding: 50px 15px;
-    }
-
-
-
-    /* style header  */
-    header {
-        overflow-x: hidden;
-    }
-    nav{
-        display: none;
-    }
-    .top-banner{
-        grid-template-columns: 1fr;
-       
-    }
-    .top-banner .text-area{
-        top: 0;
-        margin-bottom: 50px;
-    }
-
-
-    /* player style  */
-
-    .players-details .players{
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-    }
-    /* heighlight style  */
-    .highlight{
-        grid-template-columns: 1fr;
-        /* display: none; */
-    }
- /* latect league style  */
-    .latest-leagus{
-        grid-template-columns: 1fr;
-    }
-
-    .contact{
-        grid-template-columns: 1fr;
-        padding: 0 15px;
-    }
-    /* .contact input{
-        margin-bottom: 5px;
-        width: 90%;
-    }
-    .contact button{
-        margin-left: 0;
-        margin-bottom: 15px;
-    } */
-   
-    
-    }
