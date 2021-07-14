@@ -32,7 +32,8 @@ nav{
 nav ul{
     display: flex;
 }
-nav .button{
+nav .button,
+.contact-form-area button{
     background: #E02C6D;
     padding: 10px 24px;
 
@@ -120,7 +121,44 @@ color: #18191F;
     color: #6C6C6C;
 }
 /*========== end  player details  style ========= */
+/* =========== start contact style ======== */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background: rgba(20, 17, 17, 0.678);
+    padding: 0 50px;
+}
+.contact-form-area{
+    padding: 60px 25px 50px 50px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.contact-form-area h3,
+h1{
+    padding-bottom: 30px;
+}
 
+.contact-form-area input{
+    width: 60%;
+    height: 33px;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 30px;
+}
+.contact-form-area button{
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    margin-left: -5px;
+}
+.contact-form-area p{
+    font-size: 0.8em;
+}
+/* =========== end contact style ======== */
 
 
 /* ======== start footer style ============ */
